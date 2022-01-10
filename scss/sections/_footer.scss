@@ -1,0 +1,56 @@
+@use '../components/variables' as *;
+
+footer {
+    background-color: $background-color;
+    padding-top: 3.4rem;
+    padding-bottom: 4rem;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $secondary-color;
+
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.footer-description {
+    padding-left: 8.4rem;
+
+    @media (max-width: 768px) {
+        padding-left: 0;
+    }
+
+    span {
+        margin-right: 1rem;    
+    }  
+}
+
+.footer-social {
+    span {
+        margin-right: 1.8rem;
+
+        @media (max-width: 768px) {
+            margin-right: 1rem;
+        }
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+
+    a:not(:last-child) {
+        margin-right: 1.6rem;
+
+        @media (max-width: 768px) {
+            margin-right: 1rem;
+        }
+    }
+}

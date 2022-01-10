@@ -1,0 +1,389 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1;
+  height: 100%;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+}
+
+ul,
+li {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1077px;
+}
+
+a {
+  color: #626262;
+  text-decoration: none;
+}
+a:hover, a:active, a:focus {
+  color: #000000;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+.category {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  margin-bottom: 2rem;
+}
+.category a {
+  color: #b4ad9e;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #626262;
+  margin-bottom: 2.9rem;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  letter-spacing: -0.43px;
+  font-weight: 400;
+  color: #626262;
+}
+
+.perfect-container {
+  padding-left: 3.4rem;
+  padding-right: 3.7rem;
+}
+@media (max-width: 1080px) {
+  .perfect-container {
+    padding: 0;
+  }
+}
+.perfect-container__main {
+  padding-left: 3.5rem;
+  padding-right: 0;
+}
+
+.outline-btn {
+  padding: 1.7rem;
+  padding-left: 3.2rem;
+  padding-right: 3.3rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #626262;
+  border: 1px solid #626262;
+  transition: 0.2s;
+}
+.outline-btn:hover {
+  background-color: #626262;
+  color: #ffffff;
+}
+.outline-btn:active {
+  box-shadow: 1px 1px 1px #000000;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding-top: 6.8rem;
+  padding-bottom: 7.2rem;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation a:active {
+  position: relative;
+  top: 1px;
+  right: -1px;
+}
+
+.logo {
+  font-family: "Inconsolata", monospace;
+  font-size: 3rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+  padding-right: 0.5rem;
+}
+
+.nav ul {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    padding-left: 0;
+  }
+}
+.nav ul li:nth-child(1) {
+  margin-right: 12.2rem;
+}
+.nav ul li:nth-child(2) {
+  margin-right: 10.2rem;
+}
+.nav ul li:nth-child(3) {
+  margin-right: 9.5rem;
+}
+@media (max-width: 768px) {
+  .nav ul li {
+    margin-bottom: 2rem;
+  }
+}
+.nav ul li a {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.nav ul li a:hover {
+  color: #000000;
+  text-shadow: 0.1rem 0.1rem 0.6rem rgba(20, 80, 20, 0.4);
+}
+@media (max-width: 768px) {
+  .nav ul li a {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .nav ul li:nth-child(1) {
+    margin-right: 0;
+  }
+  .nav ul li:nth-child(2) {
+    margin-right: 0;
+  }
+  .nav ul li:nth-child(3) {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.toggle-nav {
+  display: none;
+}
+
+label {
+  z-index: 99;
+  position: fixed;
+  right: 1rem;
+  cursor: pointer;
+}
+label:hover span {
+  background-color: #000000;
+}
+label span {
+  display: none;
+  height: 5px;
+  width: 35px;
+  background-color: #626262;
+  transition: transform 0.2s;
+}
+label span:nth-child(2) {
+  margin: 5px 0;
+}
+@media (max-width: 768px) {
+  label span {
+    display: block;
+  }
+}
+
+.toggle-nav:checked ~ .nav {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.toggle-nav:checked ~ .logo {
+  display: none;
+}
+
+.toggle-nav:checked ~ label > span:nth-child(1) {
+  transform: rotateZ(45deg);
+  margin-top: 1rem;
+}
+
+.toggle-nav:checked ~ label > span:nth-child(3) {
+  transform: rotateZ(-45deg);
+  margin-top: -2rem;
+}
+
+.toggle-nav:checked ~ label > span:nth-child(2) {
+  opacity: 0;
+}
+
+.main-block {
+  margin-bottom: 1.3rem;
+  padding-right: 4.4rem;
+}
+
+.main-picture {
+  padding-top: 16.4rem;
+  margin-bottom: 9.7rem;
+}
+.main-picture img {
+  width: 100%;
+}
+
+.category-link {
+  margin-top: 4.67rem;
+  margin-bottom: 0;
+}
+.category-link:hover {
+  color: #000000;
+  text-shadow: 0.1rem 0.1rem 0.6rem rgba(20, 80, 20, 0.4);
+}
+
+.article-card {
+  max-width: 43.5rem;
+  margin-top: 12rem;
+}
+@media (max-width: 768px) {
+  .article-card {
+    margin-top: 8rem;
+  }
+}
+.article-card__img {
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+
+.signup {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding-top: 6.8rem;
+  padding-bottom: 7.4rem;
+  margin-top: 10.8rem;
+}
+
+.signup-form {
+  position: relative;
+  max-width: 39.9rem;
+  margin: 0 auto;
+  border-bottom: 1px solid #000000;
+}
+.signup-form h2 {
+  letter-spacing: 0.022em;
+  padding-left: 1rem;
+  margin-bottom: 7.3rem;
+}
+.signup-form input {
+  width: 92%;
+  height: 3.6rem;
+  padding-left: 0.3rem;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  color: #626262;
+}
+.signup-form input:focus {
+  outline: none;
+}
+.signup-form button {
+  position: absolute;
+  right: 0;
+  bottom: 0.9rem;
+  border: none;
+}
+.signup-form button img {
+  width: 3.2rem;
+  height: 1.7rem;
+}
+.signup-form button:hover {
+  right: -2px;
+  transition: all 0.2s;
+}
+
+.bottom-cards .article-card {
+  margin-top: 10.3rem;
+}
+.bottom-cards .button-container {
+  text-align: center;
+  padding: 15.2rem 0;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding-top: 3.4rem;
+  padding-bottom: 4rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer span {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.footer span:hover {
+  color: #626262;
+}
+
+.footer-description {
+  padding-left: 8.4rem;
+}
+@media (max-width: 768px) {
+  .footer-description {
+    padding-left: 0;
+  }
+}
+.footer-description span {
+  margin-right: 1rem;
+}
+
+.footer-social span {
+  margin-right: 1.8rem;
+}
+@media (max-width: 768px) {
+  .footer-social span {
+    margin-right: 1rem;
+  }
+}
+.footer-social i {
+  font-size: 1.5rem;
+}
+.footer-social a:not(:last-child) {
+  margin-right: 1.6rem;
+}
+@media (max-width: 768px) {
+  .footer-social a:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

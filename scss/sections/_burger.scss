@@ -1,0 +1,59 @@
+@use '../components/variables' as *;
+
+.toggle-nav {
+    display: none;
+}
+
+label {
+    z-index: 99;
+    position: fixed;
+    right: 1rem;
+    cursor: pointer;
+
+    &:hover {
+
+        span {
+            background-color: $secondary-color;
+        }       
+    }
+
+    span {
+        display: none;
+        height: 5px;
+        width: 35px;
+        background-color: $main-color;   
+        transition: transform .2s;
+
+        &:nth-child(2) {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            display: block;
+        }        
+    }
+}
+
+.toggle-nav:checked ~ .nav {
+    display: flex;
+    height: 100vh;
+    width: 100%;  
+}
+
+.toggle-nav:checked ~ .logo {
+    display: none;
+}
+
+.toggle-nav:checked ~ label > span:nth-child(1){
+    transform: rotateZ(45deg);
+    margin-top: 1rem; 
+}
+
+.toggle-nav:checked ~ label > span:nth-child(3) {
+    transform: rotateZ(-45deg);
+    margin-top: -2rem;
+}
+
+.toggle-nav:checked ~ label > span:nth-child(2) {
+    opacity: 0;
+}

@@ -1,0 +1,13 @@
+.perfect-container {
+    padding-left: 3.4rem;
+    padding-right: 3.7rem;
+
+    @media (max-width: 1080px) {
+        padding: 0;
+    }
+
+    &__main {
+        padding-left: 3.5rem;
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,102 @@
+@use '../components/variables' as *;
+@use '../components/mixins' as mixin;
+
+.header {
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 10;
+    padding-top: 6.8rem;
+    padding-bottom: 7.2rem;
+    background-color: $white-color;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        &:active {
+            position: relative;
+            top: 1px;
+            right: -1px;
+        }
+    }
+}
+
+.logo {
+    font-family: $logo-font;
+    font-size: 3rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: $secondary-color;
+    padding-right: .5rem; 
+}
+
+.nav {
+    
+    ul {
+        display: flex;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            padding-left: 0;
+        }
+
+        li {
+
+            &:nth-child(1) {
+                margin-right: 12.2rem;
+            }
+
+            &:nth-child(2) {
+                margin-right: 10.2rem;
+            }
+
+            &:nth-child(3) {
+                margin-right: 9.5rem;
+            }
+
+            @media (max-width: 768px) {
+                margin-bottom: 2rem;
+            }
+
+            a {
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                font-weight: 400;
+                text-transform: uppercase;
+
+                @include mixin.text-shadow__hover;
+
+                @media (max-width: 768px) { 
+                    font-size: 1.8rem;
+                }
+
+            }
+
+            @media (max-width: 768px) {
+                &:nth-child(1) {
+                    margin-right: 0;
+                }
+    
+                &:nth-child(2) {
+                    margin-right: 0;
+                }
+    
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+}

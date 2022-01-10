@@ -1,0 +1,54 @@
+@use '../components/variables' as *;
+
+.signup {
+    width: 100%;
+    background-color: $background-color;
+    padding-top: 6.8rem;
+    padding-bottom: 7.4rem;
+    margin-top: 10.8rem;
+}
+
+.signup-form {
+    position: relative;
+    max-width: 39.9rem;
+    margin: 0 auto;
+    border-bottom: 1px solid $secondary-color;
+
+    h2 {
+        letter-spacing: 0.022em;
+        padding-left: 1rem;
+        margin-bottom: 7.3rem;
+    }
+
+    input {
+        width: 92%;
+        height: 3.6rem;
+        padding-left: .3rem;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+        background-color: transparent;
+        color: $main-color;
+
+        &:focus {
+            outline: none;
+        }          
+    }
+
+    button {
+        position: absolute;
+        right: 0;
+        bottom: .9rem;
+        border: none;
+
+        img {
+            width: 3.2rem;
+            height: 1.7rem;
+        }
+        
+        &:hover {
+            right: -2px;  
+            transition: all .2s;
+        }      
+    }   
+}
