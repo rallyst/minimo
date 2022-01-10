@@ -19,8 +19,8 @@
     a {
         &:active {
             position: relative;
-            top: 1px;
-            right: -1px;
+            top: .1rem;
+            right: -.1rem;
         }
     }
 }
@@ -65,10 +65,11 @@
             }
 
             a {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 line-height: 2.4rem;
                 font-weight: 400;
                 text-transform: uppercase;
+                letter-spacing: -.6px;
 
                 @include mixin.text-shadow__hover;
 

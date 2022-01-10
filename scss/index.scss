@@ -1,10 +1,9 @@
 @use './components/base';
 @use './components/text-styling';
-@use './components/perfect';
 @use './components/buttons';
+@use './components/burger';
 
 @use './sections/header';
-@use './sections/burger';
 @use './sections/main-section';
 @use './sections/cards-block';
 @use './sections/signup';

@@ -12,19 +12,22 @@
     position: relative;
     max-width: 39.9rem;
     margin: 0 auto;
-    border-bottom: 1px solid $secondary-color;
+    border-bottom: .1rem solid $secondary-color;
 
     h2 {
         letter-spacing: 0.022em;
-        padding-left: 1rem;
         margin-bottom: 7.3rem;
+
+        @media (max-width: 576px) { 
+            font-size: 2.4rem;
+        }
     }
 
     input {
         width: 92%;
         height: 3.6rem;
-        padding-left: .3rem;
-        font-size: 14px;
+        margin-left: -.5rem;
+        font-size: 1.4rem;
         font-weight: 700;
         border: none;
         background-color: transparent;
@@ -47,7 +50,7 @@
         }
         
         &:hover {
-            right: -2px;  
+            right: -.2rem;  
             transition: all .2s;
         }      
     }   

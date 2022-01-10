@@ -25,7 +25,13 @@ li {
 }
 
 .container {
-  max-width: 1077px;
+  max-width: 107.7rem;
+  margin: 0 auto;
+}
+
+.container-main {
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 a {
@@ -57,6 +63,7 @@ a:link {
   font-weight: 500;
   color: #626262;
   margin-bottom: 2.9rem;
+  letter-spacing: -0.12px;
 }
 
 .text {
@@ -67,30 +74,16 @@ a:link {
   color: #626262;
 }
 
-.perfect-container {
-  padding-left: 3.4rem;
-  padding-right: 3.7rem;
-}
-@media (max-width: 1080px) {
-  .perfect-container {
-    padding: 0;
-  }
-}
-.perfect-container__main {
-  padding-left: 3.5rem;
-  padding-right: 0;
-}
-
 .outline-btn {
   padding: 1.7rem;
-  padding-left: 3.2rem;
+  padding-left: 3.3rem;
   padding-right: 3.3rem;
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 400;
   background-color: #ffffff;
   color: #626262;
-  border: 1px solid #626262;
+  border: 0.1rem solid #626262;
   transition: 0.2s;
 }
 .outline-btn:hover {
@@ -98,7 +91,60 @@ a:link {
   color: #ffffff;
 }
 .outline-btn:active {
-  box-shadow: 1px 1px 1px #000000;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000;
+}
+
+.toggle-nav {
+  display: none;
+}
+
+label {
+  z-index: 99;
+  position: fixed;
+  right: 1rem;
+  cursor: pointer;
+}
+label:hover span {
+  background-color: #000000;
+}
+label span {
+  display: none;
+  height: 0.3rem;
+  width: 3.5rem;
+  background-color: #626262;
+  transition: transform 0.2s;
+}
+label span:nth-child(2) {
+  margin: 0.6rem 0;
+}
+@media (max-width: 768px) {
+  label span {
+    display: block;
+  }
+}
+
+.toggle-nav:checked ~ .nav {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.toggle-nav:checked ~ .logo {
+  display: none;
+}
+
+.toggle-nav:checked ~ label > span:nth-child(1) {
+  transform: rotateZ(45deg);
+  margin-top: 1rem;
+}
+
+.toggle-nav:checked ~ label > span:nth-child(3) {
+  transform: rotateZ(-45deg);
+  margin-top: -1.8rem;
+}
+
+.toggle-nav:checked ~ label > span:nth-child(2) {
+  opacity: 0;
 }
 
 .header {
@@ -118,8 +164,8 @@ a:link {
 }
 .navigation a:active {
   position: relative;
-  top: 1px;
-  right: -1px;
+  top: 0.1rem;
+  right: -0.1rem;
 }
 
 .logo {
@@ -157,10 +203,11 @@ a:link {
   }
 }
 .nav ul li a {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 2.4rem;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: -0.6px;
 }
 .nav ul li a:hover {
   color: #000000;
@@ -190,62 +237,8 @@ a:link {
   }
 }
 
-.toggle-nav {
-  display: none;
-}
-
-label {
-  z-index: 99;
-  position: fixed;
-  right: 1rem;
-  cursor: pointer;
-}
-label:hover span {
-  background-color: #000000;
-}
-label span {
-  display: none;
-  height: 5px;
-  width: 35px;
-  background-color: #626262;
-  transition: transform 0.2s;
-}
-label span:nth-child(2) {
-  margin: 5px 0;
-}
-@media (max-width: 768px) {
-  label span {
-    display: block;
-  }
-}
-
-.toggle-nav:checked ~ .nav {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-}
-
-.toggle-nav:checked ~ .logo {
-  display: none;
-}
-
-.toggle-nav:checked ~ label > span:nth-child(1) {
-  transform: rotateZ(45deg);
-  margin-top: 1rem;
-}
-
-.toggle-nav:checked ~ label > span:nth-child(3) {
-  transform: rotateZ(-45deg);
-  margin-top: -2rem;
-}
-
-.toggle-nav:checked ~ label > span:nth-child(2) {
-  opacity: 0;
-}
-
 .main-block {
   margin-bottom: 1.3rem;
-  padding-right: 4.4rem;
 }
 
 .main-picture {
@@ -291,18 +284,22 @@ label span:nth-child(2) {
   position: relative;
   max-width: 39.9rem;
   margin: 0 auto;
-  border-bottom: 1px solid #000000;
+  border-bottom: 0.1rem solid #000000;
 }
 .signup-form h2 {
   letter-spacing: 0.022em;
-  padding-left: 1rem;
   margin-bottom: 7.3rem;
+}
+@media (max-width: 576px) {
+  .signup-form h2 {
+    font-size: 2.4rem;
+  }
 }
 .signup-form input {
   width: 92%;
   height: 3.6rem;
-  padding-left: 0.3rem;
-  font-size: 14px;
+  margin-left: -0.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   border: none;
   background-color: transparent;
@@ -322,7 +319,7 @@ label span:nth-child(2) {
   height: 1.7rem;
 }
 .signup-form button:hover {
-  right: -2px;
+  right: -0.2rem;
   transition: all 0.2s;
 }
 
@@ -345,8 +342,8 @@ footer {
   justify-content: space-between;
 }
 .footer span {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
   font-weight: 700;
   color: #000000;
 }
