@@ -1,0 +1,29 @@
+@use './variables' as *;
+@use './mixins' as mixin;
+
+.item-card {
+    margin-bottom: 130px;
+    max-width: 444px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 120px; 
+    }
+
+    &__img {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    &__category {
+        margin-bottom: 20px;
+    }
+
+    &__heading {
+        margin-bottom: 29px;
+    }
+
+    &__link {
+        margin-top: 47px;
+        margin-bottom: 0;
+    }  
+}

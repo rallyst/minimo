@@ -7,7 +7,7 @@
 label {
     z-index: 99;
     position: fixed;
-    right: 1rem;
+    right: 10px;
     cursor: pointer;
 
     &:hover {
@@ -46,12 +46,12 @@ label {
 
 .toggle-nav:checked ~ label > span:nth-child(1){
     transform: rotateZ(45deg);
-    margin-top: 1rem; 
+    margin-top: 10px; 
 }
 
 .toggle-nav:checked ~ label > span:nth-child(3) {
     transform: rotateZ(-45deg);
-    margin-top: -2rem;
+    margin-top: -2px;
 }
 
 .toggle-nav:checked ~ label > span:nth-child(2) {

@@ -2,16 +2,16 @@
 
 footer {
     background-color: $background-color;
-    padding-top: 3.4rem;
-    padding-bottom: 4rem;
+    padding-top: 34px;
+    padding-bottom: 40px;
 }
 .footer {
     display: flex;
     justify-content: space-between;
 
     span {
-        font-size: 1.4rem;
-        line-height: 2.4rem;
+        font-size: 14px;
+        line-height: 24px;
         font-weight: 700;
         color: $secondary-color;
 
@@ -19,38 +19,41 @@ footer {
             color: $main-color;
         }
     }
-}
 
-.footer-description {
-    padding-left: 8.4rem;
-
-    @media (max-width: 768px) {
-        padding-left: 0;
+    &__description {
+        padding-left: 84px;
+    
+        @media (max-width: 768px) {
+            padding-left: 0;
+        }
+    
+        span {
+            margin-right: 10px;    
+        }  
     }
 
-    span {
-        margin-right: 1rem;    
-    }  
-}
-
-.footer-social {
-    span {
-        margin-right: 1.8rem;
-
-        @media (max-width: 768px) {
-            margin-right: 1rem;
+    &__social {
+        span {
+            margin-right: 18px;
+    
+            @media (max-width: 768px) {
+                margin-right: 10px;
+            }
+        }
+    
+        i {
+            font-size: 15px;
+        }
+    
+        a:not(:last-child) {
+            margin-right: 16px;
+    
+            @media (max-width: 768px) {
+                margin-right: 10px;
+            }
         }
     }
-
-    i {
-        font-size: 1.5rem;
-    }
-
-    a:not(:last-child) {
-        margin-right: 1.6rem;
-
-        @media (max-width: 768px) {
-            margin-right: 1rem;
-        }
-    }
 }
+
+
+

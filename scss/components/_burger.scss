@@ -7,7 +7,7 @@
 label {
     z-index: 99;
     position: fixed;
-    right: 1rem;
+    right: 18px;
     cursor: pointer;
 
     &:hover {
@@ -19,13 +19,13 @@ label {
 
     span {
         display: none;
-        height: .3rem;
-        width: 3.5rem;
+        height: 3px;
+        width: 35px;
         background-color: $main-color;   
         transition: transform .2s;
 
         &:nth-child(2) {
-            margin: .6rem 0;
+            margin: 6px 0;
         }
 
         @media (max-width: 768px) {
@@ -35,9 +35,9 @@ label {
 }
 
 .toggle-nav:checked ~ .nav {
-    display: flex;
+    display: flex;   
     height: 100vh;
-    width: 100%;  
+    width: 100%;
 }
 
 .toggle-nav:checked ~ .logo {
@@ -46,12 +46,12 @@ label {
 
 .toggle-nav:checked ~ label > span:nth-child(1){
     transform: rotateZ(45deg);
-    margin-top: 1rem; 
+    margin-top: 10px; 
 }
 
 .toggle-nav:checked ~ label > span:nth-child(3) {
     transform: rotateZ(-45deg);
-    margin-top: -1.8rem;
+    margin-top: -18px;
 }
 
 .toggle-nav:checked ~ label > span:nth-child(2) {

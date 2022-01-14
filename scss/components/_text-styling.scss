@@ -1,30 +1,31 @@
 @use '../components/variables' as *;
+@use '../components/mixins' as mixin;
 
 .category {
     font-family: $secondary-font;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
     color: $tertiary-color;
-    margin-bottom: 2rem;
 
-    a {
-        color: $tertiary-color;
+    &--link {
+        @include mixin.text-shadow__hover;
     }
 }
 
 .heading {
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 500;
     color: $main-color;
-    margin-bottom: 2.9rem;
+    // margin-bottom: 2.9rem;
     letter-spacing: -.12px;
 }
 
 .text {
-    font-size: 1.5rem;
-    line-height: 2.4rem;
+    font-size: 15px;
+    line-height: 24px;
     letter-spacing: -0.43px;
     font-weight: 400;
     color: $main-color;
+    margin-bottom: 0;
 }

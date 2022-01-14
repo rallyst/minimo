@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&family=Playfair+Display:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Playfair+Display:wght@400;500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/5ead9005e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/index.css">
@@ -44,72 +44,60 @@
     </header>
         
     <section class="main-section"> 
-        <div class="container">  
-            <div class="main-picture">
-                <img src="./img/main.jpg" alt="two Girls">
-            </div>  
+        <div class="container">
+            <img class="main__picture" src="./img/main.jpg" alt="two Girls">
             <div class="container-main">
-                <div class="main-block">
-                    <p class="category">
-                        photodiary
-                    </p>
-                    <h1 class="heading">The perfect weekend getaway</h1>
-                    <p class="text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                    </p>
-                    <p class="category category-link"><a href="#">leave a comment</a></p>
-                </div>                     
-            </div>                  
+                <p class="item-card__category category">photodiary</p>
+                <h1 class="item-card__heading heading">The perfect weekend getaway</h1>
+                <p class="item-card__text text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                </p>
+                <p class="item-card__link category">
+                    <a class="category--link" href="#">leave a comment</a>
+                </p> 
+            </div>
         </div>
     </section>
 
     <section class="cards-block">
         <div class="container-main">
             <div class="row justify-content-around justify-content-sm-between">
-                <div class="col-12 col-sm-6 article-card">
+                <div class="col-12 col-sm-6 item-card">
                     <a href="#">
-                        <img class="article-card__img" src="./img/image_1.jpg" alt="people at open air concert">
-                        <p class="category">
-                            Lifestyle
-                        </p>
-                        <h2 class="heading">More than just a music festival</h2>
-                        <p class="text">
+                        <img class="item-card__img" src="./img/image_1.jpg" alt="people at open air concert">
+                        <p class="item-card__category category">Lifestyle</p>
+                        <h1 class="item-card__heading heading">More than just a music festival</h1>
+                        <p class="item-card__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                         </p>
                     </a>                                   
                 </div>
-                <div class="col-12 col-sm-6 article-card">
+                <div class="col-12 col-sm-6 item-card">
                     <a href="#">
-                        <img class="article-card__img" src="./img/image_2.jpg" alt="cup of coffee">
-                        <p class="category">
-                            Lifestyle
-                        </p>
-                        <h2 class="heading">Life tastes better with coffee</h2>
-                        <p class="text">
+                        <img class="item-card__img" src="./img/image_2.jpg" alt="cup of coffee">
+                        <p class="item-card__category category">Lifestyle</p>
+                        <h1 class="item-card__heading heading">Life tastes better with coffee</h1>
+                        <p class="item-card__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                         </p>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6 article-card">
+                <div class="col-12 col-sm-6 item-card">
                     <a href="#">
-                        <img class="article-card__img" src="./img/image_3.jpg" alt="two girls and bridge">
-                        <p class="category">
-                            Lifestyle
-                        </p>
-                        <h2 class="heading">American dream</h2>
-                        <p class="text">
+                        <img class="item-card__img" src="./img/image_3.jpg" alt="two girls and bridge">
+                        <p class="item-card__category category">Lifestyle</p>
+                        <h1 class="item-card__heading heading">American dream</h1>
+                        <p class="item-card__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                         </p>
                     </a>                                  
                 </div>
-                <div class="col-12 col-sm-6 article-card">
+                <div class="col-12 col-sm-6 item-card">
                     <a href="#">
-                        <img class="article-card__img" src="./img/image_4.jpg" alt="person">
-                        <p class="category">
-                            Lifestyle
-                        </p>
-                        <h2 class="heading">A day exploring the Alps</h2>
-                        <p class="text">
+                        <img class="item-card__img" src="./img/image_4.jpg" alt="person">
+                        <p class="item-card__category category">Lifestyle</p>
+                        <h1 class="item-card__heading heading">A day exploring the Alps</h1>
+                        <p class="item-card__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                         </p>
                     </a>                                   
@@ -119,43 +107,37 @@
     </section>
 
     <section class="signup">
-        <div class="container signup-form">
-            <h2 class="heading">Sign up for our newsletter!</h2>
-            <form>
-                <input type="email" placeholder="Enter a valid email address">
-                <button type="submit">
-                    <img src="./img/send-ico.png" alt="send icon">
-                </button>
-            </form>
-        </div>
+        <form class="signup-form">
+            <h2 class="signup-form__heading heading">Sign up for our newsletter!</h2>
+            <input class="signup-form__input" type="email" placeholder="Enter a valid email address">
+            <button class="signup-form__btn" type="submit">
+                <img class="signup-form__img" src="./img/send-ico.png" alt="send icon">
+            </button>
+        </form>
     </section>
 
-    <section class="bottom-cards">
+    <section class="cards-block">
         <div class="container-main">
             <div class="row justify-content-around justify-content-sm-between">
-                <div class="col-12 col-sm-6 article-card">
+                <div class="col-12 col-sm-6 item-card">
                     <a href="#">
-                        <img class="article-card__img" src="./img/image_5.jpg" alt="girl on the road">
-                        <p class="category">
-                            Lifestyle
-                        </p>
-                        <h2 class="heading">Top 10 song for running</h2>
-                        <p class="text">
+                        <img class="item-card__img" src="./img/image_5.jpg" alt="girl on the road">
+                        <p class="item-card__category category">Lifestyle</p>
+                        <h1 class="item-card__heading heading">Top 10 song for running</h1>
+                        <p class="item-card__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                         </p>
-                    </a>                                    
+                    </a>                                   
                 </div>
-                <div class="col-12 col-sm-6 article-card">
+                <div class="col-12 col-sm-6 item-card">
                     <a href="#">
-                        <img class="article-card__img" src="./img/image_6.jpg" alt="winter road">
-                        <p class="category">
-                            Lifestyle
-                        </p>
-                        <h2 class="heading">Cold winter days</h2>
-                        <p class="text">
+                        <img class="item-card__img" src="./img/image_6.jpg" alt="winter road">
+                        <p class="item-card__category category">Lifestyle</p>
+                        <h1 class="item-card__heading heading">Cold winter days</h1>
+                        <p class="item-card__text text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                         </p>
-                    </a>                                 
+                    </a>                                   
                 </div>
                 <div class="button-container">
                     <button class="outline-btn" type="submit">
@@ -167,17 +149,19 @@
     </section>
 
     <footer>
-        <div class="container footer">
-            <div class="footer-description">
-                <a href="#"><span>Terms and conditions</span></a> 
-                <a href="#"><span>Privacy</span></a>  
-            </div>   
-            <div class="footer-social">
-                <span>Follow</span>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>  
+        <div class="container">
+            <div class="footer">
+                <div class="footer__description">
+                    <a href="#"><span>Terms and conditions</span></a> 
+                    <a href="#"><span>Privacy</span></a>  
+                </div>   
+                <div class="footer__social">
+                    <span>Follow</span>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>  
+            </div>
         </div>
     </footer>   
 </body>
